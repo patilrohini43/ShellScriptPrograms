@@ -7,11 +7,11 @@ do
 random=$(( RANDOM % 6 ))
 Dice["$i"]=$random
 done
+
 echo ${Dice[@]}
 
 declare -A count
 max=0
-
 len=${#Dice[@]}
 
 for d in ${Dice[@]}
